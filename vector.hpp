@@ -6,7 +6,7 @@
 /*   By: snpark <snpark@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/07 16:35:28 by snpark            #+#    #+#             */
-/*   Updated: 2022/03/08 09:48:43 by snpark           ###   ########.fr       */
+/*   Updated: 2022/03/08 10:14:58 by snpark           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 //for referencee
@@ -22,6 +22,19 @@ class	vector
 		typedef T										value_type;
 		typedef std::allocator<T>						allocator_type;
 		typedef typename allocator_type::reference		refrence;
+		typedef typename allocator_type::const_reference const_reference;
+		typedef class vector_iterator
+		{
+		}iterator;
+		typedef class vector_const_iterator
+		{
+		}const_iterator;
+		typedef typename allocator_type::size_type       size_type;
+		typedef typename allocator_type::difference_type difference_type;
+		typedef typename allocator_type::pointer         pointer;
+		typedef typename allocator_type::const_pointer   const_pointer;
+		typedef std::reverse_iterator<iterator>          reverse_iterator;
+		typedef std::reverse_iterator<const_iterator>    const_reverse_iterator;
 		//constructor
 		vector(void);
 		vector(unsigned int n, T& val);
