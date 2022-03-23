@@ -6,11 +6,18 @@
 /*   By: snpark <snpark@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/08 09:47:40 by snpark            #+#    #+#             */
-/*   Updated: 2022/03/08 09:48:05 by snpark           ###   ########.fr       */
+/*   Updated: 2022/03/08 14:06:05 by snpark           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stack>
+namespace ft
+{
+
+class stack
+{};
+
+}
 /*
     stack synopsis
 
